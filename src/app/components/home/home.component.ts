@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { PokemonModel } from 'src/app/models/pokemon.model';
 import { PokemonServiceService } from '../../services/pokemon-service.service';
 
@@ -15,7 +16,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.searchPokemon('80');
+    // this.searchPokemon('80');
+  }
+
+  buscarFormulario( f: NgForm ) {
+    this.searchPokemon(f.value.identificador);
   }
 
   searchPokemon( identificador: string ) {
@@ -24,7 +29,7 @@ export class HomeComponent implements OnInit {
       this.pokemon.nombre = resp['name'];
       this.pokemon.numero =  resp['id'];
       this.pokemon.tipos = resp['types'];
-      console.log(this.pokemon.tipos);
+      this.pokemon.img = resp['sprites']['front_default'];
     });
   }
 

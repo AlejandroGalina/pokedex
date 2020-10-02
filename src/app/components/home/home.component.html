@@ -1,5 +1,5 @@
 <p>
-    Pokemon {{ pokemon.nombre }}
+    <b> {{ pokemon.nombre }} </b>
 </p>
 
 <p>
@@ -8,6 +8,11 @@
 <div *ngFor="let tipo of pokemon.tipos">
     {{ tipo.type.name}}
 </div>
+<img [src]="pokemon.img" alt="" width="150px" height="150px" *ngIf="pokemon.img.length > 0">
 <div>
-    <form action=""></form>
+    <form (ngSubmit)="buscarFormulario(f)" #f="ngForm">
+        <label for="">Nombre o número de pokemón</label>
+        <input type="text" placeholder="pikachu" ngModel name="identificador">
+        <button type="submit">Buscar</button>
+    </form>
 </div>
