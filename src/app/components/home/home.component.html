@@ -1,18 +1,98 @@
-<p>
-    <b> {{ pokemon.nombre }} </b>
-</p>
+<div style="display: grid; grid-template-columns: 50% 50%; min-height: calc( (66vh + 66vw)/2); width: calc( (110vh + 110vw)/2); margin: 50px auto;position: relative;">
+    <div style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;" class="flex-center-col">
+        <svg style="filter:drop-shadow( 5px 5px 7px rgba(0, 0, 0, 0.3));" viewBox="0 0 965 592" width="100%" height="100%">
+        <defs>
+          <linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="455.209" y1="296.093" x2="512.512" y2="296.093">
+            <stop offset="0" stop-color="#920101"  />
+            <stop offset="0.49" stop-color="#bf0c0c"  />
+            <stop offset="1" stop-color="#920101"  />
+          </linearGradient>
+          <linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="456.233" y1="497.676" x2="512.739" y2="497.676">
+            <stop offset="0" stop-color="#710808"  />
+            <stop offset="0.49" stop-color="#bf0c0c"  />
+            <stop offset="1" stop-color="#690808"  />
+          </linearGradient>
+          <linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="456.233" y1="149.769" x2="513" y2="149.769">
+            <stop offset="0" stop-color="#710808"  />
+            <stop offset="0.49" stop-color="#bf0c0c"  />
+            <stop offset="1" stop-color="#690808"  />
+          </linearGradient>
+          <linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="455.209" y1="35.163" x2="512.739" y2="35.163">
+            <stop offset="0" stop-color="#710808"  />
+            <stop offset="0.49" stop-color="#bf0c0c"  />
+            <stop offset="1" stop-color="#690808"  />
+          </linearGradient>
+        </defs>
+        <style>
+          tspan { white-space:pre }
+          .shp0 { fill: #bf0c0c } 
+          .shp1 { fill: #8b0000 } 
+          .shp2 { fill: url(#grd1) } 
+          .shp3 { fill: url(#grd2) } 
+          .shp4 { fill: url(#grd3) } 
+          .shp5 { fill: url(#grd4) } 
+          .shp6 { fill: #ffffff } 
+          .shp7 { fill: #65d9f3 } 
+          .shp8 { fill: #a2f1fb } 
+          .shp9 { fill: #ff0000 } 
+          .shp10 { fill: #fdf662 } 
+          .shp11 { fill: #8ff45d } 
+        </style>
+        <g id="pokedex-bigDev">
+          <g id="Red-bg" >
+            <path id="Shape 1"  class="shp0" d="M50 246.4L51.53 552.87C51.53 552.87 48.08 561.69 59.72 573.33C71.36 584.97 80.19 584.08 80.19 584.08L890.09 584.87C890.09 584.87 901.09 583.34 908.26 575.15C915.28 567.12 917.72 559.87 917.72 559.58C917.72 559.29 919 122.62 919 122.62L760.14 121.63C760.14 121.63 740.44 121.66 722.28 112.42C704.12 103.18 703.6 101.96 679.3 84.79C655 67.62 623.02 65.35 623.02 65.35L511.83 64.3C511.83 64.3 512 6.7 512 7C512 7.3 78.65 6 78.65 6C78.65 6 69.54 6.48 60.44 15.39C52.66 23 51.43 33.4 51.43 33.4L50 246.4Z" />
+            <path id="Shape 2"  class="shp1" d="M51.02 122.65L208.6 121.63C208.6 121.63 238.28 119.87 259.77 106.28C281.26 92.69 286.12 84.31 310.93 74.56C335.74 64.81 354.93 64.33 354.93 64.33L455.21 64.33L456.23 6L78.65 6C78.65 6 69.49 6.27 61.51 14.67C51.79 24.9 52.05 33.63 52.05 33.63L51.02 122.65Z" />
+            <path id="Shape 5" class="shp2" d="M455.21 7.02L512.51 7.02L512.51 585.16L456.23 585.16L455.21 7.02Z" />
+            <path id="Shape 7" class="shp3" d="M456.23 469.53L512.52 469.53C512.52 469.53 513.02 526.01 512.52 525.82C512.01 525.63 456.23 525.82 456.23 525.82L456.23 469.53Z" />
+            <path id="Shape 7 copy" class="shp4" d="M456.23 121.63L512.78 121.63C512.78 121.63 513.28 178.1 512.78 177.91C512.27 177.72 456.23 177.91 456.23 177.91L456.23 121.63Z" />
+            <path id="Shape 7 copy 2" class="shp5" d="M455.21 6L512.51 6C512.51 6 513.02 64.52 512.51 64.33C512 64.13 455.21 64.33 455.21 64.33L455.21 6Z" />
+          </g>
+          <g id="big-lens">
+            <path id="Shape 3" class="shp6" d="M70.29 67.47C69.92 49.64 81.72 26.02 111.48 26.11C138.6 26.2 152.33 48.84 152.33 67.4C152.33 85.95 137.72 107.72 111.31 107.72C84.9 107.72 70.7 86.84 70.29 67.47Z" />
+            <path id="Shape 3 copy 4" class="shp7" d="M76.61 67.17C76.29 52.27 86.16 32.53 111.03 32.6C133.69 32.68 145.16 51.6 145.16 67.1C145.16 82.61 132.96 100.8 110.89 100.8C88.82 100.8 76.95 83.35 76.61 67.17Z" />
+            <path id="Shape 4" class="shp8" d="M112 36.82C107.17 36.82 100.67 38.32 99.33 38.99C97.82 39.74 93.17 42.99 93.33 48.57C93.58 56.87 100 56.16 101 56.16C106.5 56.16 107.42 54.16 112 54.16C117.08 54.16 119.33 55.82 122.33 55.82C123.42 55.82 129.17 54.58 129.17 47.41C129.17 43.57 123.92 38.74 122.83 38.32C121.01 37.62 117.25 36.82 112 36.82Z" />
+          </g>
+          <path id="red-lens" class="shp9" d="M166.48 31.96C166.37 26.81 169.78 19.98 178.38 20.01C186.22 20.04 190.19 26.58 190.19 31.94C190.19 37.31 185.96 43.6 178.33 43.6C170.7 43.6 166.6 37.56 166.48 31.96Z" />
+          <path id="yellow-lens" class="shp10" d="M203.31 31.96C203.21 26.81 206.62 19.98 215.22 20.01C223.06 20.04 227.02 26.58 227.02 31.94C227.02 37.31 222.8 43.6 215.17 43.6C207.54 43.6 203.43 37.56 203.31 31.96Z" />
+          <path id="green-lens" class="shp11" d="M241.17 31.96C241.07 26.81 244.48 19.98 253.08 20.01C260.92 20.04 264.88 26.58 264.88 31.94C264.88 37.31 260.66 43.6 253.03 43.6C245.4 43.6 241.29 37.56 241.17 31.96Z" />
+        </g>
+      </svg>
+    </div>
+    <!--------------------  GRID DATOS POKEMON ------------->
+    <div style="width: 100%; height: 100%; z-index: 2; padding: calc( (7vh + 7vw)/2) calc( (3vh + 3vw)/2)  calc( (1vh + 1vw)/2) calc( (7vh + 7vw)/2);">
+        <div style="width: 100%; height: 100%;" class="flex-center-col">
+            <!-- display imagen pokemon -->
+            <div id="pantalla-pokemon" class="flex-center-col">
+                <img [src]="pokemon.img" alt="" width="150px" height="150px" *ngIf="pokemon.img != null && pokemon.img.length > 0 ">
+                <p *ngIf="pokemon.nombre">
+                    <span style="font-family: 'Bangers', cursive;">Pokemón: &nbsp; </span> <b> {{ pokemon.nombre }} </b>
+                </p>
+                <div *ngFor="let tipo of pokemon.tipos">
+                    <span style="font-family: 'Bangers', cursive;">Tipo: &nbsp; </span> {{ tipo.type.name}}
+                </div>
+            </div>
 
-<p>
-    {{ pokemon.numero }}
-</p>
-<div *ngFor="let tipo of pokemon.tipos">
-    {{ tipo.type.name}}
-</div>
-<img [src]="pokemon.img" alt="" width="150px" height="150px" *ngIf="pokemon.img.length > 0">
-<div>
-    <form (ngSubmit)="buscarFormulario(f)" #f="ngForm">
-        <label for="">Nombre o número de pokemón</label>
-        <input type="text" placeholder="pikachu" ngModel name="identificador">
-        <button type="submit">Buscar</button>
-    </form>
+
+            <div class="flex-center-row " id="controles-pokemon">
+                <button class="control-button button-shadow" (click)="searchPokemon( pokemon.numero - 1)"> prev </button>
+                <button class="control-button button-shadow" (click)="capturarPokemon(pokemon)"> Capturar </button>
+                <button class="control-button button-shadow" (click)="searchPokemon( pokemon.numero + 1)"> next </button>
+            </div>
+
+            <button class="control-button button-shadow" routerLink="/favoritos" style="margin-top: 30px  ;"> Ver mis Pokemons </button>
+
+        </div>
+    </div>
+
+    <!--------------------  GRID FORMULARIO BUSQUEDA ------------->
+
+    <div style="width: 100%;  height: 100%; z-index: 3; padding: calc( (7vh + 7vw)/2) calc( (6.5vh + 6.5vw)/2) calc( (1vh + 1vw)/2) calc( (3vh + 3vw)/2); ">
+        <form id="formulario-busqueda" (ngSubmit)="buscarFormulario(f)" #f="ngForm" style="width: 100%; height: 100%;" class="flex-center-col">
+            <!-- <label for="">Nombre o número de pokemón</label> -->
+            <!-- <h1> Pokemón</h1> -->
+            <textarea class="flex-center-col" placeholder="Introduce NOMBRE o NÚMERO de pokemón" wrap="hard" maxlength="45" ngModel name="identificador" required> </textarea>
+            <button type="submit" class="button-shadow">Buscar</button>
+        </form>
+    </div>
+
 </div>

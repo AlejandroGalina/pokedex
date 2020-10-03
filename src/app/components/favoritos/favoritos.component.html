@@ -1,0 +1,10 @@
+<div id="encabezado" class="flex-center-col">
+    <h2>Mis Pokemón</h2>
+</div>
+
+<div class="grid-contenedor">
+    <div class="card-pokemon flex-center-col" *ngFor="let pokemon of misPokemons">
+        <img [src]="pokemon.img" [alt]="pokemon.nombre" width="200px" height="200px">
+        <h1> {{ pokemon.nombre }} </h1>
+    </div>
+</div>
