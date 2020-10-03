@@ -8,5 +8,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Recursos usados
 
-todas la ilustraciones son de mi propiedad, la diseñé en photopea
-las imagenes de pomekons son descargadas de la API https://pokeapi.co/
+todas la ilustraciones son de mi propiedad, y son diseñadas en photopea.com.
+Las imagenes de los pomekons son descargadas de la API https://pokeapi.co/
