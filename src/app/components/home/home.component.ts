@@ -32,6 +32,12 @@ export class HomeComponent implements OnInit {
     this.pokemonService.agregar(pokemon);
   }
 
+  searchPokemonNext( identificador: number ) {
+    const n = identificador + 1;
+    const text = n.toString();
+    this.searchPokemon( text );
+  }
+
   searchPokemon( identificador: string ) {
     // tslint:disable-next-line: radix
     const n = parseInt(identificador);

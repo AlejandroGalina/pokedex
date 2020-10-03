@@ -23,9 +23,9 @@
             </div>
             <!-- controles accion pokemon -->
             <div class="flex-center-row " id="controles-pokemon">
-                <button class="control-button button-shadow" (click)="searchPokemon( pokemon.numero - 1)"> prev </button>
+                <button class="control-button button-shadow" (click)="searchPokemonNext( -pokemon.numero)"> prev </button>
                 <button class="control-button button-shadow" (click)="capturarPokemon(pokemon)"> Capturar </button>
-                <button class="control-button button-shadow" (click)="searchPokemon( pokemon.numero + 1)"> next </button>
+                <button class="control-button button-shadow" (click)="searchPokemonNext( pokemon.numero)"> next </button>
             </div>
             <!-- ir a pagina de favoritos -->
             <button class="control-button button-shadow" routerLink="/favoritos" style="margin-top: 30px  ;"> Ver mis Pokemons </button>
@@ -71,9 +71,9 @@
         </div>
         <!-- controles accion pokemon -->
         <div class="flex-center-row " id="controles-pokemon">
-            <button class="control-button button-shadow" (click)="searchPokemon( pokemon.numero - 1)"> prev </button>
+            <button class="control-button button-shadow" (click)="searchPokemonNext( -pokemon.numero)"> prev </button>
             <button class="control-button button-shadow" (click)="capturarPokemon(pokemon)"> Capturar </button>
-            <button class="control-button button-shadow" (click)="searchPokemon( pokemon.numero + 1)"> next </button>
+            <button class="control-button button-shadow" ((click)="searchPokemonNext( pokemon.numero)"> next </button>
         </div>
         <!-- ir a pagina de favoritos -->
         <button class="control-button button-shadow" routerLink="/favoritos" style="margin-top: 30px  ;"> Ver mis Pokemons </button>
