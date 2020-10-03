@@ -6,7 +6,7 @@
     <div class="card-pokemon flex-center-col" *ngFor="let pokemon of misPokemons">
         <img [src]="pokemon.img" [alt]="pokemon.nombre" width="200px" height="200px">
         <h1> {{ pokemon.nombre }} </h1>
-        <button (click)="eliminarPokemon(pokemon)">eliminar</button>
+        <button (click)="eliminarPokemon(pokemon)">liberar</button>
     </div>
 </div>
 
