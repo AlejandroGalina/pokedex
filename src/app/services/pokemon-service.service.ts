@@ -28,12 +28,29 @@ export class PokemonServiceService {
   agregar( pokemon: PokemonModel) {
     this.leerLocalStorage();
     this.misPokemons.push(pokemon);
-    const stringPokemons = JSON.stringify(this.misPokemons);
-    localStorage.setItem('misPokemons', stringPokemons);
+    this.setLocalStorage(this.misPokemons);
   }
 
   eliminar( pokemon: PokemonModel) {
+    this.leerLocalStorage();
+    this.misPokemons.forEach( (poke, index) => {
+        if( pokemon.numero === poke.numero) {
+          console.log(index);
+          this.misPokemons.splice(index, 1);
+        }
+    });
+    this.setLocalStorage(this.misPokemons);
+    return this.misPokemons;
+  }
 
+  setLocalStorage( pokemons ) {
+    const stringPokemons = JSON.stringify(pokemons);
+    try {
+      localStorage.setItem('misPokemons', stringPokemons);
+      window.alert('accion realizada con éxito');
+    } catch(e) {
+      window.alert('algo salió mal, intenta nuevamente');
+    }
   }
 
   obtenerTodos() {

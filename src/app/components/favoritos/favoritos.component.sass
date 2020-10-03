@@ -5,7 +5,7 @@
     h2
         text-shadow: 1px 0 0 #030310, -1px 0 0 #030310, 0 1px 0 #030310, 0 -1px 0 #030310, 1px 1px #030310, -1px -1px 0 #030310, 1px -1px 0 #030310, -1px 1px 0 #030310, 2px 2px #bf0808
         font-family: 'Bangers', cursive 
-        font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)))
+        font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)))
 
 .grid-contenedor
     position: relative
@@ -17,6 +17,12 @@
     grid-auto-flow: dense
     grid-gap: 20px
     padding: 0 50px
+    margin: auto
+
+@media screen and ( max-width: 500px)
+    .grid-contenedor
+        padding: 0px
+
 
 .card-pokemon
     background: #e53800
@@ -39,9 +45,13 @@
     
     h1
         font-family: 'Bangers', cursive
-        font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300)))
+        font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)))
         transition: 0.5s ease-in-out
         z-index: 1
+
+    button
+        z-index: 3
+
 
 
 .card-pokemon:hover

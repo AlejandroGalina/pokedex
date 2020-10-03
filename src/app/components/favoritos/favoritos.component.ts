@@ -16,4 +16,9 @@ export class FavoritosComponent implements OnInit {
     this.misPokemons = this.pokemonServices.obtenerTodos();
   }
 
+  eliminarPokemon( pokemon: PokemonModel){
+    console.log('elimina', pokemon.nombre);
+    this.misPokemons = this.pokemonServices.eliminar(pokemon);
+  }
+
 }
